@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Excel-like App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="darkModeBtn">Modo oscuro</button>
+    <h1>Excel online</h1>
+    <div class="excel-app">
+        <div class="toolbar">
+            <button class="btn" id="addRowBtn">Agregar Fila</button>
+            <button class="btn" id="addColumnBtn">Agregar Columna</button>
+            <button class="btn" id="deleteRowBtn">Eliminar Fila</button>
+            <button class="btn" id="deleteColumnBtn">Eliminar Columna</button>
+        </div>
+        <div class="table-container">
+            <table id="excelTable">
+                <thead>
+                    <tr>
+                        <th></th> <!-- Header for row numbers -->
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th> <!-- Row number -->
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <!-- Add more cells as needed -->
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
